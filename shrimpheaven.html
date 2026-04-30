@@ -28,6 +28,7 @@
             --colour-highlight2: #81cc1f25;
             --colour-bold: #2b3e13;
             --colour-italics: #608237;
+            --colour-textlink: #608237;
         }
         footer{
             width:100%;
@@ -178,6 +179,8 @@
         text-body p:first-of-type {
             padding-top: 20px;
         }
+        a {text-decoration: none; color: var(--colour-textlink);}
+        a:hover {text-decoration: underline dotted; color: var(--colour-textlink);}
 
         /* code from mark.hn blog, for highlighter effect */
         mark {
@@ -410,7 +413,7 @@
             <div class="text-title --left" id="plants">planting & stocking</div>
             <p><i>The nav menu up top skips to these titles by including an ID in the div (e.g. id="plants") and linking to it (e.g. < a href="#plants">Planting< /a>). It's very simple, and if you want these to just be titles and no more than that, then just remove the IDs.</i></p>
             <p>Maecenas mattis pharetra dolor, sit amet cursus erat accumsan vitae. Morbi aliquet justo sit amet facilisis pretium. Vestibulum eget sodales mauris, eu porta ex. Curabitur at eros lacus. Phasellus sit amet massa auctor, varius lectus vitae, maximus elit. Suspendisse et orci pellentesque quam gravida lobortis. Ut pretium urna nunc, et venenatis enim sollicitudin eget. Curabitur ac sagittis orci. Vestibulum nec metus sed dui viverra vestibulum. Ut vehicula nunc ut quam luctus, sit amet vulputate eros iaculis. Quisque sagittis congue volutpat. Curabitur porttitor suscipit elit, in pharetra leo ornare sed. Phasellus sit amet tempor nulla, eget posuere augue. Sed mi urna, semper vel arcu eget, gravida euismod nisl.</p>
-            <p>I've also included custom styles for text, & I've set up the colours with variables so they can be easily changed. This includes <mark>highlights</mark>, <b>bold text</b>, and <i>italics</i>.</p>
+            <p>I've also included custom styles for text, & I've set up the colours with variables so they can be easily changed. This includes <mark>highlights</mark>, <b>bold text</b>, <i>italics</i>, and <a href="">links</a>.</p>
             
             <div class="text-title --hero" >in-text hero image</div>
             <div class="text-img --hero" ><img src=https://shrimpybusiness.com/cdn/shop/collections/IMG_20190820_185146.jpg style="width:60%;"></div>
